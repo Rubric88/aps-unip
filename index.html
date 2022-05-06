@@ -10,17 +10,18 @@
   <title>SOS Cerrado</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
 
 <body>
   <header id="headerr">
     <p><img src="cerrado.png" alt="logo.png" width="90px" style="margin: 10px 0 0 10px;"></p>
     <nav>
-      <a class="botaohead" href="index.html#">INÍCIO</a>
-      <a class="botaohead" href="index.html#sobre">SOBRE O PROJETO</a>
-      <a class="botaohead" href="index.html#sobre_2">SOBRE NÓS</a>
-      <a class="botaohead" href="index.html#ajudar">COMO NOS AJUDAR</a>
-      <a class="botaohead" href="index.html#sociais">REDES SOCIAIS</a>
+      <!-- <a class="botaohead" href="index.html#">INÍCIO</a>  -->
+      <a class="botaohead" href="#sobre">SOBRE O PROJETO</a>
+      <a class="botaohead" href="#sobre_2">SOBRE NÓS</a>
+      <a class="botaohead" href="#ajudar">COMO NOS AJUDAR</a>
+      <a class="botaohead" href="#sociais">REDES SOCIAIS</a>
   </nav>
   </header>
 
@@ -122,10 +123,24 @@
 
   <footer>
     <h1 id="sociais" class="texto">Informativo</h1>
-    <p id="sociais" class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fuga perferendis
-      voluptas amet provident alias
-      ducimus odit rem laboriosam, nemo aspernatur illum fugiat! Quidem facilis, repellendus corrupti accusamus tempora
-      sint. lo</p>
+      <div class="rodape">
+        <p style="margin: 0;">Copyright &copy; 2022-2022 SOS Cerrado</p>
+        <div class="sociais">
+          <div class="social">
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </div>
+          <div class="social">
+            <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </div>
+          <div class="social">
+            <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+          </div>
+          <div class="social">
+            <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <img src="qr_apk.png" alt="Código QR" style="width: 20%;">
+      </div>
   </footer>
 
   <a id="bhome" class="botaohome" href="#">
@@ -137,38 +152,39 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-      <script>
-        const scrollListener = () => {
-          // pega os elementos do header e de voltar ao topo
-          const meuheader = document.getElementById("headerr");
-          const botaohome = document.getElementById("bhome");
+        
+  <script>
+    const scrollListener = () => {
+      // pega os elementos do header e de voltar ao topo
+      const meuheader = document.getElementById("headerr");
+      const botaohome = document.getElementById("bhome");
 
-          // se descer um pouco a página, muda a cor do header
-          if (window.scrollY > 10) {
-            meuheader.style.backgroundColor = "#a7d39f";
-          } else {
-            meuheader.style.backgroundColor = "#edffea";
-          }
+      // se descer um pouco a página, muda a cor do header
+      if (window.scrollY > 10) {
+        meuheader.style.backgroundColor = "#a7d39f";
+      } else {
+        meuheader.style.backgroundColor = "#edffea";
+      }
 
-          // se descer mais um pouco a página, revela o botão de voltar ao topo, senão, esconde
-          if (window.scrollY > 400) {
-            botaohome.style.transform = "translate(0)";
-            botaohome.style.opacity = "1";
-          } else {
-            botaohome.style.transform = "translate(20vw)";
-            botaohome.style.opacity = "0";
-          }
-        }
+      // se descer mais um pouco a página, revela o botão de voltar ao topo, senão, esconde
+      if (window.scrollY > 400) {
+        botaohome.style.transform = "translate(0)";
+        // botaohome.style.opacity = "1";
+      } else {
+        botaohome.style.transform = "translate(20vw)";
+        // botaohome.style.opacity = "0";
+      }
+    }
 
-        // faz a função acima ser chamada somente quando o usuário rolar a página
-        window.addEventListener('scroll', scrollListener);
-      </script>
+    // faz a função acima ser chamada somente quando o usuário rolar a página
+    window.addEventListener('scroll', scrollListener);
+  </script>
 </body>
 
 </html>
