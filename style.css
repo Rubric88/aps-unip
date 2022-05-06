@@ -1,0 +1,122 @@
+div#carouselExampleCaptions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 75px auto ;
+}
+
+body {
+    background-color: #edffea !important;
+}
+
+main {
+    margin: 0 4.5vw;
+    /* max-width: 1200px; */
+}
+
+/* @media (min-width: 1200px) {
+    main {
+        margin: 0 auto;
+    }
+} */
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #edffea;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    top: 0px;
+    justify-content: space-between;
+    z-index: 10;
+    transition: all ease 0.3s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+a.botaohead {
+    background-image:radial-gradient(closest-corner at center, #f7f7f7, #dddddd);
+    display: inline-block;
+    color: rgb(85, 85, 85);
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 4px 10px;
+    margin: 5px 10px;
+    border-radius: 18px;
+    text-decoration: none;
+    user-select: none;
+}
+
+.botaohead:hover {
+    background: rgb(85, 85, 85);
+    color: #f7f7f7;
+}
+
+.botaohead {
+    transition: all ease 0.3s;
+}
+
+
+header p {
+    color: white;
+    font-size: 25px;
+
+}
+
+.saiba_mais {
+    align-items: center;
+    background-color: rgb(57, 136, 57);
+    padding: 6px 8px;
+    text-decoration: none !important;
+    border-radius: 10px;
+    color: white;
+    transition: all ease 0.3s;
+}
+
+.saiba_mais:hover {
+    background-color: rgb(67, 160, 67);
+    color: white;
+}
+
+h1.texto {
+    text-align: center;
+}
+
+p.texto {
+    margin: 50px 0;
+    font-size: 18px;
+}
+
+div#sobre,
+div#sobre_2,
+div#ajudar {
+    position: relative;
+    bottom: calc(220px - 10vw);
+}
+
+footer {
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 250px;
+}
+
+p#sociais {
+    margin-bottom: 0%;
+    color: white;
+}
+
+h1#sociais {
+    color: white;
+}
+
+.descricaoimg {
+    background-color: rgba(20, 20, 20, 0.5);
+    font-size: calc(0.5rem + 0.8vw);
+    position: absolute;
+    padding: 5px 10px;
+    margin: 0;
+    user-select: none;
+    color: #eeeeee;
+    width: 100%;
+}
