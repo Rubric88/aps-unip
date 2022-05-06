@@ -46,17 +46,13 @@ a.botaohead {
     border-radius: 18px;
     text-decoration: none;
     user-select: none;
+    transition: all ease 0.3s;
 }
 
 .botaohead:hover {
     background: rgb(85, 85, 85);
     color: #f7f7f7;
 }
-
-.botaohead {
-    transition: all ease 0.3s;
-}
-
 
 header p {
     color: white;
@@ -93,6 +89,30 @@ div#sobre_2,
 div#ajudar {
     position: relative;
     bottom: calc(220px - 10vw);
+}
+
+.botaohome {
+    background-color: #a7d39f;
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    transform: translate(20vw);
+    color: rgb(10, 10, 10);
+    box-sizing: border-box;
+    padding: 4px 10px;
+    border-radius: 50%;
+    text-decoration: none;
+    user-select: none;
+    transition: all ease 0.3s;
+}
+
+.botaohome:hover {
+    background: rgb(85, 85, 85);
+    border-color: #fff;
+    color: #f7f7f7;
 }
 
 footer {
