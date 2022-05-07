@@ -1,0 +1,48 @@
+body {
+    background-color: #007931 !important;
+}
+
+main {
+    margin: 40px 4.5vw;
+    /* max-width: 1200px; */
+}
+
+/* @media (min-width: 1200px) {
+    main {
+        margin: 0 auto;
+    }
+} */
+
+header {
+    background-color: rgb(46, 46, 46);
+    padding: 10px 5px;
+}
+
+header > h1 {
+    color: white;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.display {
+    display: flex;
+}
+
+@media (max-width: 960px) {
+    .display {
+        flex-direction: column;
+    }
+
+    img {
+        margin: auto;
+    }
+}
+
+.display > p {
+    color: white;
+    margin-left: 10px;
+    font-weight: 400;
+}
